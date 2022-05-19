@@ -13,8 +13,8 @@ from brownie.network.web3 import web3
 
 CLI_FLAGS = {
     "port": "--port",
-    "host": "--hostname",
-    "fork": "--fork",
+    "host": "--host",
+    "fork": "--fork-url",
     "fork_block": "--fork-block-number",
 }
 IGNORED_SETTINGS = ["chain_id"]
