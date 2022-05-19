@@ -65,9 +65,7 @@ def _request(method: str, args: List) -> int:
 
 
 def sleep(seconds: int) -> int:
-    _request("evm_increaseTime", [hex(seconds)])
-    # hack: need to update anvil to return this
-    return seconds
+    return _request("evm_increaseTime", [hex(seconds)])
 
 
 def mine(timestamp: Optional[int] = None) -> None:
