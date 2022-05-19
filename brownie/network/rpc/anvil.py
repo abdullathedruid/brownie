@@ -57,6 +57,8 @@ def _request(method: str, args: List) -> int:
         response = web3.provider.make_request(method, args)  # type: ignore
         if "result" in response:
             return response["result"]
+        print("response")
+        print(response)
     except (AttributeError, RequestsConnectionError):
         raise RPCRequestError("Web3 is not connected.")
     raise RPCRequestError(response["error"]["message"])
