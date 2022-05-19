@@ -63,7 +63,7 @@ def _request(method: str, args: List) -> int:
 
 
 def sleep(seconds: int) -> int:
-    return _request("evm_increaseTime", [seconds])
+    return _request("evm_increaseTime", [hex(seconds)])
 
 
 def mine(timestamp: Optional[int] = None) -> None:
