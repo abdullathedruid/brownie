@@ -37,6 +37,7 @@ STANDARD_JSON: Dict = {
         },
         "evmVersion": None,
         "remappings": [],
+        "metadata": {"bytecodeHash": "none"},
     },
 }
 EVM_SOLC_VERSIONS = [
